@@ -1,0 +1,93 @@
+.login-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    padding: 50px 100px;
+    background-color: #424242;
+    color: #ffffff;
+    font: 400 14px/20px, "Monserat", sans-serif;
+    letter-spacing: normal;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+.login-card-title {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.login-card-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.logo-text {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.windows-login-text {
+    margin-left: 10px;
+}
+
+.windows-login-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    outline: none;
+    font-family: "Monserat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 64px;
+    line-height: 36px;
+    border-radius: 4px;
+}
+
+.ripple-button {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple-button:hover {
+    background: var(--accent-color) radial-gradient(circle, transparent 1%, var(--accent-color) 1%) center/15000%;
+}
+.ripple-button:active {
+    background-color: var(--accent-color);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.divider {
+    border-top-color: rgba(255, 255, 255, 0.12);
+    display: block;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.login-card-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    margin: -8px 0px 16px;
+}
