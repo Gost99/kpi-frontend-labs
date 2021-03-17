@@ -2,61 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Лабораторная1</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 1 Prostak</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="icons/fontawesome/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <header class="header">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="index.html">
-                        <p class="logo-text"><img class="logo" src="img/logo.png">Globe</p>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
-                            <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    <nav id="sidenav" class="sidenav sidenav-closed" onmouseover="toggleSidenavState()" onmouseout="toggleSidenavState()">
+        <a href="javascript:void(0)" class="sidenav-toggle-btn">
+            <div id="sidenavToggleIcon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
+        </a>
+        <a class="sidenav-item" href="login.html">
+            <i class="sidenav-item-icon fas fa-sign-in-alt"></i>
+            <span class="sidenav-item-text">Login</span>
+        </a>
+        <a class="sidenav-item" href="loading.html">
+            <i class="sidenav-item-icon fas fa-spinner"></i>
+            <span class="sidenav-item-text">Loading</span>
+        </a>
+    </nav>
+    <section id="layout" class="layout sidenav-closed-layout">
+        <header class="layout-header">
+            <a class="logo" href="index.html">
+                <i class="logo-icon fas fa-briefcase"></i>
+                <p class="logo-text">Career</p>
+            </a>
         </header>
-        <section class="main">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="title">city.</h1>
-                        <p class="subtitle">Air pollution occurs when harmful or excessive quantities of substances including gases, particles, and biological molecules are introduced into Earth's atmosphere.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row no-gutters justify-content-center">
-                <div class="col-auto">
-                    <p class="footer-text">98-765-43-21</p>
-                </div>
-                <div class="col-auto">
-                    <img class="logo-footer" src="img/logo-footer.png">
-                </div>
-                <div class="col-auto">
-                    <p class="footer-text">Cilpo 25a street</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <main class="layout-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </main>
+        <footer class="layout-footer">
+            <p>Copyright 2021 MProstak</p>
+        </footer>
+    </section>
     <link rel="stylesheet" href="css/theme.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/scripts.js"></script>
 </body>
 </html>
