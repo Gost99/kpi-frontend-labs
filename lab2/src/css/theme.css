@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url("../fonts/Montserrat-Black.ttf"); /* Путь к файлу со шрифтом */
+    font-weight: 900;
+}
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url("../fonts/Montserrat-Regular.ttf"); /* Путь к файлу со шрифтом */
+    font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font: 14px "Montserrat", sans-serif;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #212121;
+    --accent-color: #00e676;
+    --warn-color: #d32f2f; 
+}

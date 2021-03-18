@@ -1,0 +1,133 @@
+#layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left .5s;
+}
+
+header, footer {
+  height: 50px;
+  background: var(--primary-color);
+  display: flex;
+}
+
+main {
+  flex: 1;
+}
+
+.logo-text {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  white-space: nowrap;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, #sidenavToggleIcon a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .sidenav-toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav-item-text {
+  margin-left: 20px
+}
+
+.sidenav-closed {
+  width: 100px;
+}
+
+.sidenav-opened {
+  width: 300px;
+}
+
+.sidenav-closed-layout {
+  margin-left: 100px;
+}
+
+.sidenav-opened-layout {
+  margin-left: 300px;
+}
+
+
+/* Sidenav toggle icon */
+
+.sidenavToggleIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.logo-text {
+  margin-left: 10px;
+}
+
+.layout-footer {
+  color: #ffffff;
+  justify-content: center;
+}
+
+.layout-content {
+  padding: 40px 80px;
+}

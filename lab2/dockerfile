@@ -1,0 +1,4 @@
+FROM nginx:latest
+COPY src/ /usr/share/nginx/html/
+
+# type 'docker run -it --rm -d -p 8080:80 --name web webserver' to run container
