@@ -1,2 +1,34 @@
-<p>layout works!</p>
-<router-outlet></router-outlet>
+<div class="app-layout">
+    <nav id="sidenav" class="sidenav sidenav-closed" (mouseover)="toggleSidenavState()" (mouseout)="toggleSidenavState()">
+        <a href="javascript:void(0)" class="sidenav-toggle-btn">
+            <div id="sidenavToggleIcon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+        <a class="sidenav-item" href="login.html">
+            <mat-icon inline class="sidenav-item-text">account_box</mat-icon>
+            <span class="sidenav-item-text">Account</span>
+        </a>
+        <a class="sidenav-item" href="loading.html">
+            <mat-icon inline class="sidenav-item-text">business</mat-icon>
+            <span class="sidenav-item-text">Departments</span>
+        </a>
+    </nav>
+    <section id="layout" class="layout sidenav-closed-layout">
+        <header class="layout-header">
+            <mat-toolbar color="primary" class="layout-header-toolbar">
+                <career-logo class="logo"></career-logo>
+            </mat-toolbar>
+        </header>
+        <main class="layout-content">
+            <router-outlet></router-outlet>
+        </main>
+        <footer class="layout-footer">
+            <mat-toolbar color="primary" class="layout-footer-toolbar">
+                <p>Copyright 2021 MProstak</p>
+            </mat-toolbar>
+        </footer>
+    </section>
+</div>
