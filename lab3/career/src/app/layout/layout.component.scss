@@ -118,6 +118,8 @@ main {
 
 .layout-content {
     height: calc(100vh - 128px);
+    padding: 50px 30px;
+    overflow-y: auto;
 }
 
 .layout-footer-toolbar {
