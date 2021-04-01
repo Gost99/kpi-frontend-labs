@@ -10,7 +10,7 @@ import { HomePageComponent } from './home-page.component';
   exports: [HomePageComponent],
   imports: [
     CommonModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ]
 })
 export class HomePageModule { }

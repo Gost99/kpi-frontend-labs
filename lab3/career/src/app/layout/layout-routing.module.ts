@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '../authentication/services/auth.guard';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
@@ -17,11 +18,11 @@ const routes: Routes = [
       },
       {
         path: 'account',
-        loadChildren: () => import('../account/pages/account-page').then(m => m.AccountPageModule)
+        loadChildren: () => import('../account/pages/account-page').then(m => m.AccountPageModule),
       },
       {
         path: 'departments',
-        loadChildren: () => import('../departments/pages/departments.module').then(m => m.DepartmentsModule)
+        loadChildren: () => import('../departments/pages/departments.module').then(m => m.DepartmentsModule),
       }
     ]
   }

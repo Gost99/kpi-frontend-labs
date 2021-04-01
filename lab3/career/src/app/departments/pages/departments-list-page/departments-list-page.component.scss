@@ -5,13 +5,12 @@
 .departments-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .departments-list-item {
-    margin: 4%;
+    flex: auto;
+    margin: 1%;
 }
 
 .departments-list-page-admin-panel {

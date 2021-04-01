@@ -122,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "career"
+    }
+  },
+  "defaultProject": "career",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

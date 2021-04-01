@@ -1,10 +1,6 @@
 .department-list-item {
     background-color: #ffffff;
-    height: 200px;
-    width: 300px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 4em;
 }
 
 .department-list-item-content {
@@ -30,3 +26,16 @@
 .department-list-item-remove-button {
     align-self: flex-end;
 }
+
+// @import '../../../../styles.scss';
+
+// .department-list-item:hover {
+//     background: linear-gradient(130deg, map-get($career-primary, 900) 0%, map-get($career-accent, 900) 100%);
+//     box-shadow: none;
+//     .icon,
+//     .title,
+//     .desc{
+//         color: white;
+//         transition: .3s all ease-in-out;
+//     }
+// }

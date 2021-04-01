@@ -6,6 +6,7 @@ import { LayoutComponent } from './layout.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppLogoModule } from '@shared/layout/components/app-logo';
+import { LogoutModule } from '../authentication/components/logout/logout.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AppLogoModule } from '@shared/layout/components/app-logo';
     LayoutRoutingModule,
     MatIconModule,
     AppLogoModule,
-    MatToolbarModule
+    MatToolbarModule,
+    LogoutModule,
   ]
 })
 export class LayoutModule { }

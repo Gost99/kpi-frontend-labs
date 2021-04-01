@@ -12,15 +12,21 @@ export class DepartmentsService {
 
     constructor(private localStorageRepository: LocalStorageRepository) {
         if(!localStorageRepository.exists(DepartmentsDataKey)) {
+            let count = 0;
             const departments: Department[] = [
-                { id: 0, name: 'HR', description: 'HR department'},
-                { id: 1, name: 'IT', description: 'IT department'},
-                { id: 2, name: 'Support', description: 'Support department'},
+                { id: count++, name: 'Commercial Projects Operation', description: 'description...'},
+                { id: count++, name: 'Call-Center Unit', description: 'description...'},
+                { id: count++, name: 'Finance', description: 'description...'},
+                { id: count++, name: 'General Administration', description: 'description...'},
+                { id: count++, name: 'Human Resources', description: 'description...'},
+                { id: count++, name: 'Information Technologies', description: 'description...'},
+                { id: count++, name: 'Planning, Reporting and Monitoring Unit', description: 'description...'},
+                { id: count++, name: 'Commercial Projects', description: 'description...'}
             ];
             this.localStorageRepository.save(DepartmentsDataKey, departments);
         }
     }
-    
+
     public getAll() : Promise<Department[]> {
         const self: DepartmentsService = this;
         const promise: Promise<Department[]> = new Promise<Department[]>(function(resolve, reject) {
