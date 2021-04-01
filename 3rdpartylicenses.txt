@@ -57,6 +57,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/localize
 MIT
 
@@ -89,6 +92,9 @@ THE SOFTWARE.
 MIT
 
 @angular/router
+MIT
+
+@ngrx/store
 MIT
 
 core-js
